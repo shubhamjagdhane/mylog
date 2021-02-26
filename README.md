@@ -1,6 +1,7 @@
 # My Log Framework - mylog
 ```
-This project is build using the built-in 'log' package of Golang. I used that library and implemented my six functions which are Debug, Info, Warn, Error, Fatalf, Panicf.
+This project is build using the built-in 'log' package of Golang. 
+I used that library and implemented my six functions which are Debug, Info, Warn, Error, Fatalf, Panicf.
 
 The implementation has been made with respect to understanding the every detail of built-in package 'log'. 
 The motive of this project is to understand use case of Singleton pattern.
