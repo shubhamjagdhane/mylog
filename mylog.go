@@ -376,6 +376,11 @@ func Info(format string, v ...interface{}) {
 	infoLogger.Output(2, fmt.Sprintf(format, v...))
 }
 
+func Warn(format string, v ...interface{}) {
+	warnLogger := New(os.Stderr, "[WARN]:   ", LstdFlags|Lshortfile)
+	warnLogger.Output(2, fmt.Sprintf(format, v...))
+}
+
 // Debug is used to gives informatives logs
 func Debug(format string, v ...interface{}) {
 	debugLogger := New(os.Stderr, "[DEBUG]:  ", LstdFlags|Lshortfile)
